@@ -13,7 +13,7 @@ library(dplyr)
 # 2. Open ecotaxa table ----
 #--------------------------------------------------------------------------#
 #  data
-ecotaxa300m <- read.table("Raw Data/ecotaxa_export_300m.tsv", sep = "\t", header = TRUE)
+ecotaxa300m <- read.table("Input/ecotaxa_export_300m.tsv", sep = "\t", header = TRUE)
 
 # only keep the needed columns
 eco300m_reduced <- ecotaxa300m %>% 
