@@ -32,14 +32,14 @@ https://zenodo.org/records/17712720
 Analyses réalisées avec le logiciel Rstudio (version 4.3.1)
 
 Regroupement des organismes zooplanctoniques en 15 classes taxonomiques :
-- 300m : script 1.a. 
-- 830m : script 1.b.
+- 300m : script 1.a
+- 830m : script 1.b
 
 ### Script 2
 
 Regroupement des données par jour et par mois : 
-- 300m : script 2.a.
-- 830m : script 2.b. 
+- 300m : script 2.a
+- 830m : script 2.b
 
 ### Script 3
 
