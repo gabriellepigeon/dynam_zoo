@@ -154,6 +154,7 @@ Sauvegarder le tableau des abondances de chaque taxon pour toute la série tempo
 
 ```{r}
 write_csv(count_taxo_rough, "../Output/Final Data/Count_total_taxo_300m.csv")
+write_csv(ecotaxa300m, "../Output/Intermediary Data/Ecotaxa300m_taxons.csv")
 ```
 
 vérification finale : le nombre de lignes du le jeu de données (= nombre d'objets) doit être égal à la somme des abondances de la série temporelle
