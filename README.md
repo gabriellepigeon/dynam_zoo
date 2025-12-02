@@ -17,28 +17,36 @@ Chaque image et métadonnées associées acquises par les UVP6 ont été import�
 dans l'application web Ecotaxa (version ?). Les prédictions taxonomiques 
 automatiques par le logiciel ont fait l'objet d'une validation manuelle par 
 Gleice Souza Santos et Julie Dutoict. Les images validées ont ensuite été 
-exportées sous la forme d'un tableau avec 144 variables. 
+exportées sous la forme de tableaux avec 144 variables. 
 
 Tableau 1 (UVP6 à 300m) : "ecotaxa_export_300m.tsv"
 Tableau 2 (UVP6 à 830m) : "ecotaxa_export_830m.tsv"
 
-Description des variables : 
+Description des variables disponible sur : 
+https://zenodo.org/records/17712720 
 
-### Script 1.a.
+### Script 1
 
-Réalisé avec le logiciel Rstudio (version ?)
+Analyses réalisées avec le logiciel Rstudio (version 4.3.1)
 
-### Script 1.b. 
+Regroupement des organismes zooplanctoniques en 15 classes taxonomiques :
+- 300m : script 1.a. 
+- 830m : script 1.b.
 
-### Script 2.a.
+### Script 2
 
-### Script 2.b.
+Regroupement des données par jour et par mois : 
+- 300m : script 2.a.
+- 830m : script 2.b. 
 
-### Script 3.
+### Script 3
 
-### Script 4. 
+Extraction du volume d'eau échantillonné 
 
+### Script 4
 
+Calcul des concentrations mensuelles pour chaque classe de particules et pour 
+chaque classe taxonomique de zooplancton
 
 
 
