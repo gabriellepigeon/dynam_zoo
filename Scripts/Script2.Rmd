@@ -3,8 +3,6 @@ title: "Script2"
 output: html_document
 ---
 
-# Script 1
-
  Ce script  associe à chaque taxon selectionné sous Ecotaxa un taxon choisi par l'utilisateur : 
 
 ## 1. Charger les données
