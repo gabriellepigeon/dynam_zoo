@@ -1,0 +1,1 @@
+This files explains the structure of the raw datas.
