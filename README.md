@@ -7,20 +7,22 @@ et des particules (neige marine) au niveau d'un mouillage déployé dans le bass
 Atlantique équatorial (23°W, 0°N). Afin d'enrichir les connaissances sur les 
 communautés planctoniques mésopélagiques, deux UVP6 ont été placés à 300 et 830m 
 de profondeur. Les caméras ont acquis des données toutes les heures, sur plus de 
-5 ans (du 12/10/2019 au 01/02/2025). 
+5 ans (du 12 octobre 2019 au 01 février 2025). 
 
 ## Méthodes 
 
 ### Données brutes 
 
 Chaque image et métadonnées associées acquises par les UVP6 ont été importées
-dans l'application web Ecotaxa (version ?). Les prédictions taxonomiques 
-automatiques par le logiciel ont fait l'objet d'une validation manuelle par 
-Gleice Souza Santos et Julie Dutoict. Les images validées ont ensuite été 
-exportées sous la forme de tableaux avec 144 variables. 
+dans l'application web Ecotaxa. Les prédictions taxonomiques automatiques par le 
+logiciel ont fait l'objet d'une validation manuelle par Gleice Souza Santos 
+(données d'octobre 2019 à juillet 2021) et Julie Dutoict (données d'août 2021 à 
+janvier 2025). 
 
-Tableau 1 (UVP6 à 300m) : "ecotaxa_export_300m.tsv"
-Tableau 2 (UVP6 à 830m) : "ecotaxa_export_830m.tsv"
+Les images validées ont ensuite été exportées sous la forme de tableaux avec 144 
+variables :  
+- Tableau 1 (UVP6 à 300m) : "ecotaxa_export_300m.tsv"
+- Tableau 2 (UVP6 à 830m) : "ecotaxa_export_830m.tsv"
 
 Description des variables disponible sur : 
 https://zenodo.org/records/17712720 
