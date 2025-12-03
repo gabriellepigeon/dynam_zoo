@@ -3,20 +3,24 @@ title: "Script2"
 output: html_document
 ---
 
- Ce script  associe à chaque taxon selectionné sous Ecotaxa un taxon choisi par l'utilisateur : 
+ Ce script associe à chaque taxon selectionné sous Ecotaxa un taxon choisi par l'utilisateur : 
 
-## 1. Charger les données
+## 1. Chargement des packages et des données 
 
-Télécharcher le tableau vierge créé dans script 1 et récupérer le jeu de données Ecotaxa300m
+```{r}
+library('tidyverse')
+```
+
+
+Télécharger le tableau vierge créé dans script 1 et récupérer le jeu de données Ecotaxa300m
 
 ```{r}
 taxa_rough <- read.table("../Output/Intermediary Data/table_taxons.tsv", sep = ",", header = TRUE)
-View(taxa_rough)
 ecotaxa300m <- read_csv("../Output/Intermediary Data/Ecotaxa300m.csv")
 colnames(ecotaxa300m)[colnames(ecotaxa300m) == "object_annotation_category"] <- "taxon"
 ```
 
-## 2. Associer les nouveaux taxons choisis aux anciens 
+## 2. Association des nouveaux taxons choisis aux anciens 
 
 Trier dans l'ordre alphabétique et associer un nouveau taxon à chaque catégorie taxonomique
 
@@ -103,7 +107,6 @@ taxa_rough$taxo_rough <- c("Na",
                            "Annelida",
                            "Hydrozoa"
 )
-View(taxa_rough)
 ```
 
 Créer une colonne "taxo_rough" avec les nouveaux taxons dans le tableau Ecotaxa300m
