@@ -82,7 +82,7 @@ tableau_jour$Date <- as.Date(tableau_jour$Date)
 Ajouter une colonne "mois"
 
 ```{r}
-tableau_jour$Month <- format(tableau_jour$Date, "%Y-%m")  # ou floor_date(df$Date, "month") pour un vrai objet Date
+tableau_jour$Month <- format(tableau_jour$Date, "%Y-%m")
 ```
 
 Grouper par mois et sommer toutes les autres colonnes sauf Date
