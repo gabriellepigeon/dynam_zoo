@@ -353,8 +353,6 @@ display: none;
 </div>
 
 
-<div id="script-1" class="section level1">
-<h1>Script 1</h1>
 <p>Ce script crée un tableau avec la liste des taxons identifiés sur
 EcoTaxa à partir de la base de données ecotaxa_export_300m.tsv</p>
 <div id="setup" class="section level2">
@@ -558,7 +556,6 @@ print(tc, &quot;taxon&quot;,&quot;n&quot;, limit = 60)</code></pre>
   mutate(taxo_rough = NA)</code></pre>
 <p>Enregister le tableau</p>
 <pre class="r"><code>write_csv(unique_taxa, &quot;../Output/Intermediary Data/table_taxons.tsv&quot;)</code></pre>
-</div>
 </div>
 
 

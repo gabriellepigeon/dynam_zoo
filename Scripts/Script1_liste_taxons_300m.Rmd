@@ -1,5 +1,5 @@
 ---
-title: "Script1"
+title: "Script1_liste_taxons_300m"
 output: html_document
 ---
 
@@ -27,6 +27,7 @@ ecotaxa300m <- read_tsv("../Input/ecotaxa_export_300m.tsv")
 ## 2. Mise en forme des données
 
 Garder que les colonnes necessaires
+
 ```{r}
 eco300m_reduced <- ecotaxa300m %>% 
   select(c("object_id", "taxon"= "object_annotation_category", "lineage" = "object_annotation_hierarchy","object_annotation_status"))

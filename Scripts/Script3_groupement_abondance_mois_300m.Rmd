@@ -1,9 +1,9 @@
 ---
-title: "Script3"
+title: "Script3_groupement_abondance_mois_300m"
 output: html_document
 ---
 
-Ce script groupe les abondances par mois et refromatte le tableau pour obtenir un tableau avec colonnes = taxon et ligne = date
+Ce script groupe les abondances par mois et reformatte le tableau pour obtenir un tableau avec colonnes = taxon et ligne = date
 
 ## Setup
 
