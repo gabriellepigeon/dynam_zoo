@@ -4,7 +4,7 @@ output: html_document
 date: "2025-12-03"
 ---
 
-Ce script permet d'extraire les volumes échantillonés par les UVPs pour calculer des concentrations d'organismes à partir des abondances 
+Ce script permet d'extraire les volumes échantillonnés par l'UVP à 300m pour calculer des concentrations d'organismes à partir des abondances 
 
 ## 1. Chargement des packages et des données
 
