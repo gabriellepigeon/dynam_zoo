@@ -14,19 +14,11 @@ Ici, les applications de FAIRisation du projet ont été réalisées sur les ét
 
 Les données brutes sont les fichiers :
 
--   
+-   ecotaxa_export_16757_20250519_1350.tsv
 
-    (1) ecotaxa_export_16757_20250519_1350.tsv
+-   ecotaxa_export_16765_20250513_1216.tsv
 
--   
-
-    (2) ecotaxa_export_16765_20250513_1216.tsv
-
--   
-
-    (3) Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv
-
-Dans les 3 fichiers, les données et variables ne sont pas décrites et peu compréhensibles par une personne externe. Les deux premiers fichiers sont cependant des sorties d’EcoTaxa et sont standardisées avec les données d’autres projets réalisés sous EcoTaxa. Les noms des fichiers sont peu clairs, on ne sait pas quel fichier correspond à quelle profondeur.
+Dans les deux fichiers, les données et variables ne sont pas décrites et peu compréhensibles par une personne externe. Les deux premiers fichiers sont cependant des sorties d’EcoTaxa et sont standardisées avec les données d’autres projets réalisés sous EcoTaxa. Les noms des fichiers sont peu clairs, on ne sait pas quel fichier correspond à quelle profondeur.
 
 ### 2.2. Métadonnées
 
@@ -43,7 +35,11 @@ La majorité des métadonnées pour les deux premiers fichiers sont présentes d
 
 Il manque cependant les métadonnées liées aux identifications taxonomiques (Identifications WORMS).
 
-Pour le troisième fichier, **REMPLIR**
+Il y a également un fichier de métadonnées embarquées concernant l'UVP6 :
+
+-   Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv
+
+Les nom des colonnes contiennent des unités mais ne sont pas expliquées et peuvent être peu compréhensibles par une personne externe. Il existe des colonnes complètement vides, ce qui est peu clair.
 
 ### 2.3. Scripts
 
@@ -89,12 +85,6 @@ Les images validées ont ensuite été exportées sous la forme de tableaux avec
 
 La description des variables pour ces jeux de données est disponible sur : <https://zenodo.org/records/17712720>. Ce fichier est FAIR sur de nombreux aspects. Il est facile à trouver : il a un DOI permanent (10.5281/zenodo.17712720) et il est hébergé dans une archive reconnue. Il est accessible, publié sous la licence ouverte Creative Commons 4.0 et téléchargeable. Il est interopérable : les métadonnées et la description des données sont formalisées dans un format standard, cependant ceci pourrait être amélioré avec un format de données ouvert (csv au lieu de excel). Enfin, le dépôt est réutilisable, avec une documentation claire (description et unités des variables).
 
-Des données complémentaires sont également disponibles dans le fichier
-
--   Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv.
-
-Ces données, récoltées toutes les heures, renseignent sur les volumes filtrés par l'UVP, les concentrations et biovolumes de différentes classes de taille de particules.
-
 ### 3.2. Métadonnées
 
 *Étape 3 FAIRisation : description des métadonnées présentes*
@@ -119,9 +109,19 @@ Exemple :
 
 *Étape 4 FAIRisation : acquisition des métadonnées sur les identifications des images*
 
-Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus) sont disponibles dans les fichiers .
+Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus) sont disponibles dans le fichier Métadonnées_catégories_identification.html .
 
-*Étape 5 FAIRisation : acquisition des métadonnées sur les paramètres environnementaux et sur les particules*
+*Étape 5 FAIRisation : métadonnées embarquées*
+
+Des métadonnées embarquées sont dans le fichier
+
+-   Données_embarquées_UVP6.csv
+
+Ce fichier, contient des données envoyées par l'UVP, notamment les volumes filtrés par l'UVP, ainsi que les concentrations et biovolumes de différentes classes de taille de particules. Ce fichier figure dans le dossier "Input" car les volumes filtrés sont utilisés dans les analyses
+
+Associé à ce fichier, le fichier Metadonnées_UVP6.html renseigne sur le nom des colonnes et sur les unités du précédent fichier.
+
+**Epliquer si ces fichiers sont FAIR**
 
 ### 3.3. Scripts
 
@@ -146,3 +146,5 @@ Les scripts permettant à partir des données brutes d’obtenir le tableau pour
 Ils sont également disponibles sous le format .html pour être intéractifs et facilement partageables.
 
 *Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données)*
+
+**Rajouter arborescence finale**
