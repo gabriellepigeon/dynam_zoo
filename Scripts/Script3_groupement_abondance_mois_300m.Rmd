@@ -40,7 +40,7 @@ Groupement des abondances par date et taxon
 
 ```{r}
 eco_300_summary <- ecotaxa300m_NOCOP %>%
-  select(Date = object_date, Heure = object_time, Taxa = taxon) %>%
+  select(Date = object_date, Heure = object_time, Taxa = taxo_rough) %>%
   mutate(Date = as.Date(Date))  # Colonne bien au format Date
 
 tableau_jour <- eco_300_summary %>%
@@ -69,7 +69,7 @@ Rajouter les colonnes total contage + total sans détritus
 tableau_jour <- tableau_jour %>%
   mutate(
     Total = rowSums(select(., -Date)),
-    `Total Zooplancton` = rowSums(select(., -Date, -detritus))
+    `Total Zooplancton` = rowSums(select(., -Date, -Detritus))
   )
 ```
 

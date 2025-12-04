@@ -117,6 +117,7 @@ Créer une colonne "taxo_rough" avec les nouveaux taxons dans le tableau Ecotaxa
 map_taxo <- setNames(taxa_rough$taxo_rough, taxa_rough$taxon)
 ecotaxa300m <- ecotaxa300m %>%
   mutate(taxo_rough = map_taxo[taxon])
+names(ecotaxa300m)[ncol(ecotaxa300m)]
 ```
 
 ## 3. Vérification des correspondances 
