@@ -118,7 +118,7 @@ Les métadonnées concernant les identifications taxonomiques (classification ph
 
 -   Métadonnées_catégories_identification.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données et des références scientifiques robustes. Il faut cependant noter que certaines catégories sont plus floues (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas standardisées (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
@@ -132,7 +132,7 @@ Associé à ce fichier, le fichier
 
 -   Metadonnées_UVP6.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Maorgot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
 
 ### 3.3. Scripts
 
@@ -154,7 +154,7 @@ Les scripts permettant à partir des données brutes d’obtenir le tableau pour
 
 -   Script5_concentrations_zooplancton_300m.Rmd : Obtient les concentrations de chaque taxon de zooplancton par mois à partir des abondances en les divisant par le volume échantillonné, récupéré dans le script4
 
-Ils sont également disponibles sous le format .html pour être intéractifs et facilement partageables.
+Le format R markdown les rend intéractifs et clairs. En appuyant sur "knit", il est possible de les convertir en .html pour les partager facilement. Ils sont également disponibles sous le format markdown pour être visible de façon claire sur Github.
 
 ### 3.5. Arborescence finale
 
