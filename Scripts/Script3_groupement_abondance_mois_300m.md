@@ -1,3 +1,9 @@
+# Script 3 : groupement abondance mois 300m
+
+Date : 4/12/2025
+
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+
 Ce script groupe les abondances par mois et reformatte le tableau pour
 obtenir un tableau avec colonnes = taxon et ligne = date
 

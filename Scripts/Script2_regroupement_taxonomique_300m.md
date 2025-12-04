@@ -1,3 +1,9 @@
+# Script 2 : regroupement taxonomique 300m
+
+Date : 4/12/2025
+
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+
 Ce script associe à chaque taxon selectionné sous Ecotaxa un taxon
 choisi par l'utilisateur :
 

@@ -1,3 +1,9 @@
+# Script 5 : concentrations zooplancton 300m
+
+Date : 4/12/2025
+
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+
 Ce script permet d'obtenir les concentrations de chaque taxon de
 zooplancton par mois à partir des abondances en les divisant par le
 volume échantillonné, récupéré dans le script4.

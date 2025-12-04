@@ -1,3 +1,9 @@
+# Script 4 : extraction volume 300m
+
+Date : 4/12/2025
+
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+
 Ce script permet d'extraire les volumes échantillonnés par l'UVP à 300m
 pour calculer des concentrations d'organismes à partir des abondances
 
