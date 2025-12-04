@@ -1,6 +1,10 @@
 ---
 title: "Script1_liste_taxons_300m"
-output: html_document
+date: "4/12/2025"
+author: "Julie Dutoict (julie.dutoict@etu.sorbonne-universite.fr)"
+output:
+  md_document:
+    variant: markdown
 ---
 
 Ce script crée un tableau avec la liste des taxons identifiés sur EcoTaxa à partir de la base de données ecotaxa_export_300m.tsv
