@@ -13,7 +13,7 @@ On télécharge le fichier Ecopart associé aux UVP6s
 library(dplyr)
 library('tidyverse')
 
-Ecopart <- read.csv("../Input/Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv", sep = ";", header = TRUE)
+Ecopart <- read.csv("../Input/Données_embarquées_UVP6.csv", sep = ",", header = TRUE)
 ```
 
 ## 2. Mise en forme du jeu de données
