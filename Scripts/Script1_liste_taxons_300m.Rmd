@@ -1,0 +1,77 @@
+---
+title: "Script1_liste_taxons_300m"
+date: "4/12/2025"
+author: "Julie Dutoict (julie.dutoict@etu.sorbonne-universite.fr)"
+output: html_document
+---
+
+Ce script crée un tableau avec la liste des taxons identifiés sur EcoTaxa à partir de la base de données ecotaxa_export_300m.tsv
+
+## 1. Setup
+
+Charger packages
+
+```{r}
+library('data.tree')
+library('readr')
+library('tidyverse')
+library('readxl')
+library('vroom')
+library(dplyr)
+```
+
+Ouvrir le jeu de données EcoTaxa
+
+```{r}
+ecotaxa300m <- read_tsv("../Input/ecotaxa_export_300m.tsv")
+```
+
+## 2. Mise en forme des données
+
+Garder que les colonnes necessaires
+
+```{r}
+eco300m_reduced <- ecotaxa300m %>% 
+  select(c("object_id", "taxon"= "object_annotation_category", "lineage" = "object_annotation_hierarchy","object_annotation_status"))
+```
+
+Remplacer '\>' par '/'
+
+```{r}
+eco300m_reduced$lineage <- gsub('>','/',eco300m_reduced$lineage)
+
+write_csv(ecotaxa300m, "../Output/Intermediary Data/Ecotaxa300m.csv")
+```
+
+## 3. Construire l'arbre
+
+Ici, on compte les combinaisons d'objects par taxon et lignée
+
+```{r}
+tc <- count(eco300m_reduced, taxon, lineage) %>% 
+  rename(pathString=lineage) %>%   
+  arrange(pathString) %>% 
+  as.Node()
+
+print(tc, "taxon","n", limit = 60)
+```
+
+Convertir en dataframe
+
+```{r}
+tcd <- ToDataFrameTree(tc, "taxon", "n")
+```
+
+## 4. Création du tableau avec tous les taxons
+
+```{r}
+unique_taxa <- eco300m_reduced %>%
+  distinct(taxon) %>%
+  mutate(taxo_rough = NA)
+```
+
+Enregister le tableau
+
+```{r}
+write_csv(unique_taxa, "../Output/Intermediary Data/table_taxons.tsv")
+```
