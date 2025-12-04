@@ -118,7 +118,7 @@ Les métadonnées concernant les identifications taxonomiques (classification ph
 
 -   Métadonnées_catégories_identification.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant persistant. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données et des références scientifiques robustes. Il faut cependant noter que certaines catégories sont plus floues (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données et des références scientifiques robustes. Il faut cependant noter que certaines catégories sont plus floues (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
@@ -132,7 +132,7 @@ Associé à ce fichier, le fichier
 
 -   Metadonnées_UVP6.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Maorgot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant persistant. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Maorgot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
 
 ### 3.3. Scripts
 
@@ -197,4 +197,4 @@ qui est le fichier final réalisé à partir des scripts FAIRisés ici, qui est 
 
 ### 3.5. Perspectives
 
-*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant perenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant permanent à la station d'échantillonage.*
+*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant perenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant perenne à la station d'échantillonage.*
