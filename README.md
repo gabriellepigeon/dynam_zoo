@@ -14,15 +14,23 @@ Ici, les applications de FAIRisation du projet ont été réalisées sur les ét
 
 Les données brutes sont les fichiers :
 
--   ecotaxa_export_16757_20250519_1350.tsv
--   ecotaxa_export_16765_20250513_1216.tsv
--   Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv
+-   
+
+    (1) ecotaxa_export_16757_20250519_1350.tsv
+
+-   
+
+    (2) ecotaxa_export_16765_20250513_1216.tsv
+
+-   
+
+    (3) Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv
 
 Dans les 3 fichiers, les données et variables ne sont pas décrites et peu compréhensibles par une personne externe. Les deux premiers fichiers sont cependant des sorties d’EcoTaxa et sont standardisées avec les données d’autres projets réalisés sous EcoTaxa. Les noms des fichiers sont peu clairs, on ne sait pas quel fichier correspond à quelle profondeur.
 
 ### 2.2. Métadonnées
 
-La majorité des métadonnées sont dans les fichiers des données brutes en tant que variables, cependant leur description ne l’est pas (nom des variables pas expliqué). Voici quelques exemples des métadonnées :
+La majorité des métadonnées pour les deux premiers fichiers sont présentes dans le fichier en tant que variables, cependant leur description ne l’est pas (nom des variables pas expliqué). Voici quelques exemples des métadonnées :
 
 -   object_lat
 -   object_lon
@@ -34,6 +42,8 @@ La majorité des métadonnées sont dans les fichiers des données brutes en tan
 -   sample_stationid acq_instrument
 
 Il manque cependant les métadonnées liées aux identifications taxonomiques (Identifications WORMS).
+
+Pour le troisième fichier, **REMPLIR**
 
 ### 2.3. Scripts
 
@@ -77,9 +87,13 @@ Les images validées ont ensuite été exportées sous la forme de tableaux avec
 
 -   Tableau 2 (UVP6 à 830m) : "ecotaxa_export_800m.tsv"
 
-La description des variables pour ces jeux de données est disponible sur
+La description des variables pour ces jeux de données est disponible sur : <https://zenodo.org/records/17712720>. Ce fichier est FAIR sur de nombreux aspects. Il est facile à trouver : il a un DOI permanent (10.5281/zenodo.17712720) et il est hébergé dans une archive reconnue. Il est accessible, publié sous la licence ouverte Creative Commons 4.0 et téléchargeable. Il est interopérable : les métadonnées et la description des données sont formalisées dans un format standard, cependant ceci pourrait être amélioré avec un format de données ouvert (csv au lieu de excel). Enfin, le dépôt est réutilisable, avec une documentation claire (description et unités des variables).
 
-:   <https://zenodo.org/records/17712720>. Ce fichier est FAIR sur de nombreux aspects. Il est facile à trouver : il a un DOI permanent (10.5281/zenodo.17712720) et il est hébergé dans une archive reconnue. Il est accessible, publié sous la licence ouverte Creative Commons 4.0 et téléchargeable. Il est interopérable : les métadonnées et la description des données sont formalisées dans un format standard, cependant ceci pourrait être amélioré avec un format de données ouvert (csv au lieu de excel). Enfin, le dépôt est réutilisable, avec une documentation claire (description et unités des variables).
+Des données complémentaires sont également disponibles dans le fichier
+
+-   Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv.
+
+Ces données, récoltées toutes les heures, renseignent sur les volumes filtrés par l'UVP, les concentrations et biovolumes de différentes classes de taille de particules.
 
 ### 3.2. Métadonnées
 
