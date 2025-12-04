@@ -2,7 +2,7 @@
 
 Date : 4/12/2025
 
-Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr))
 
 Ce script crée un tableau avec la liste des taxons identifiés sur EcoTaxa à partir de la base de données ecotaxa_export_300m.tsv
 

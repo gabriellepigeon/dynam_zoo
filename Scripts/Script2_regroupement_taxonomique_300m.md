@@ -2,7 +2,7 @@
 
 Date : 4/12/2025
 
-Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr))
 
 Ce script associe à chaque taxon selectionné sous Ecotaxa un taxon
 choisi par l'utilisateur :

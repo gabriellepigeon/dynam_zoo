@@ -2,7 +2,7 @@
 
 Date : 4/12/2025
 
-Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr))
 
 Ce script permet d'obtenir les concentrations de chaque taxon de
 zooplancton par mois à partir des abondances en les divisant par le

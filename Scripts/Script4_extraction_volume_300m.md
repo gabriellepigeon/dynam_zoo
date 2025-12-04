@@ -2,7 +2,7 @@
 
 Date : 4/12/2025
 
-Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr))
 
 Ce script permet d'extraire les volumes échantillonnés par l'UVP à 300m
 pour calculer des concentrations d'organismes à partir des abondances

@@ -2,7 +2,7 @@
 
 Date : 4/12/2025
 
-Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr){.email})
+Auteur : Julie Dutoict ([julie.dutoict\@etu.sorbonne-universite.fr](mailto:julie.dutoict@etu.sorbonne-universite.fr))
 
 Ce script groupe les abondances par mois et reformatte le tableau pour
 obtenir un tableau avec colonnes = taxon et ligne = date
