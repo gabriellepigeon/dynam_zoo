@@ -114,7 +114,11 @@ Exemple :
 
 *Étape 4 FAIRisation : acquisition des métadonnées sur les identifications des images*
 
-Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus) sont disponibles dans le fichier Métadonnées_catégories_identification.html.
+Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus) sont disponibles dans le fichier
+
+-   Métadonnées_catégories_identification.csv
+
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant persistant. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données et des références scientifiques robustes. Il faut cependant noter que certaines catégories sont plus floues (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
@@ -124,9 +128,11 @@ Des métadonnées embarquées sont dans le fichier :
 
 Ce fichier, contient des données envoyées par l'UVP, notamment les volumes filtrés par l'UVP, ainsi que les concentrations et biovolumes de différentes classes de taille de particules. Ce fichier figure dans le dossier "Input" car les volumes filtrés sont utilisés dans les analyses.
 
-Associé à ce fichier, le fichier Metadonnées_UVP6.html renseigne sur le nom des colonnes et sur les unités du précédent fichier.
+Associé à ce fichier, le fichier
 
-**Epliquer si ces fichiers sont FAIR**
+-   Metadonnées_UVP6.csv
+
+réalisé par Julie Dutoict, Gabrielle Pigeon et Maorgot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant persistant. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
 
 ### 3.3. Scripts
 
@@ -150,6 +156,45 @@ Les scripts permettant à partir des données brutes d’obtenir le tableau pour
 
 Ils sont également disponibles sous le format .html pour être intéractifs et facilement partageables.
 
-*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données)*
+### 3.5. Arborescence finale
 
-**Rajouter arborescence finale**
+-   README.md
+-   Scripts
+    -   Script1_liste_taxons_300m.md
+    -   Script1_liste_taxons_300m.Rmd
+    -   Script2_regroupement_taxonomique_300m.md
+    -   Script2_regroupement_taxonomique_300m.Rmd
+    -   Script3_groupement_abondance_mois_300m.md
+    -   Script3_groupement_abondance_mois_300m.Rmd
+    -   Script4_extraction_volume_300m.md
+    -   Script4_extraction_volume_300m.Rmd
+    -   Script5_concentrations_zooplancton_300m.md
+    -   Script5_concentrations_zooplancton_300m.Rmd
+-   Input
+    -   Données embarquées_UVP6.csv
+    -   ecotaxa_export_300m.tsv
+    -   ecotaxa_export_800m.tsv
+-   Métadonnées
+    -   Métadonnées_catégories_identification.csv
+    -   Métadonnées_UVP6.csv
+-   Output
+    -   Intermediary Data
+        -   Ecotaxa300m_taxons.csv
+        -   Ecotaxa300m.csv
+        -   Sampled_volumes_month_300m.csv
+        -   Sampled_volumes_month_800m.csv
+        -   Table_month_zoo_NOCOP_300m.csv
+        -   table_taxons.tsv
+    -   Final Data
+        -   Count_total_taxo_300m.csv
+        -   Table_conc_month_zoo_NOCOP_300m.csv
+
+Avec
+
+-   Table_conc_month_zoo_NOCOP_300m.csv
+
+qui est le fichier final réalisé à partir des scripts FAIRisés ici, qui est utilisé par la suite pour les analyses sur le zooplancton à 300m.
+
+### 3.5. Perspectives
+
+*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant perenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant permanent à la station d'échantillonage.*
