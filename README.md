@@ -114,11 +114,11 @@ Exemple :
 
 *Étape 4 FAIRisation : acquisition des métadonnées sur les identifications des images*
 
-Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus) sont disponibles dans le fichier
+Les métadonnées concernant les identifications taxonomiques (classification phylogénétique et identifiant WoRMS) ainsi que les critères d’identification pour les autres catégories (par exemple détritus ou "bean-like") sont disponibles dans le fichier
 
 -   Métadonnées_catégories_identification.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas standardisées (par exemple détritus), ce qui rend sa réutilisation moins facile pour ces catégories.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Les catégories de l'ancienne classification ("unacceped" sur Worms, par exemple Thecosomata) sont identifiées avec leur APHIA ID. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas taxonomiques (par exemple détritus et bean-like), ce qui rend la réutilisation de ces catégories moins faciles, même si elles sont définies dans le fichier.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
