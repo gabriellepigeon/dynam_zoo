@@ -1,18 +1,18 @@
-# FAIRisation d'un stage de master 1 sur la dynamique du zooplancton et de la neige marine en Atlantique équatorial
+# FAIRisation d'un stage de Master 1 sur la dynamique du zooplancton et de la neige marine en Atlantique équatorial
 
-Stage de 2 mois réalisé en 2025 par Julie Dutoict au Laboratoire d'Océanographie de Villefranche, sous l'encadrement de Lars Stemmann, professeur à Sorbonne Université
+Stage de 2 mois réalisé en 2025 par Julie Dutoict au Laboratoire d'Océanographie de Villefranche, sous l'encadrement de Lars Stemmann, professeur d'universités à Sorbonne Université
 
 Processus de FAIRisation réalisé par Gabrielle Pigeon (gabrielle.pigeon\@etu.sorbonne-universite.fr), Margot Rabeau (margot.rabeau\@etu.sorbonne-universite.fr) et Julie Dutoict (julie.dutoict\@etu.sorbonne-universite.fr)
 
 ## 1. Introduction
 
-Ce projet vise à appliquer le procédé FAIR (Findable, Accessible, Interoperable, Reusable) à un jeu de données et scripts issus d'un stage de master 1. Le but est de promouvoir la réutilisation des données en assurant la fiabilité, la reproductibilité et la transparence des analyses qui ont été réalisées. Pour cela, il est nécessaire de structurer son jeu de données avant de le partager et d'y associer des métadonnées riches et standardisées offrant le plus d'informations possibles. Il est également important de tracer l'utilisation et le traitement des données pour que les personnes souhaitant les réutiliser obtiennent les mêmes résultats d’elles-mêmes.
+Ce projet vise à appliquer les pratiques FAIR (Findable, Accessible, Interoperable, Reusable) à un jeu de données et scripts issus d'un stage de Master 1. Le but est de promouvoir la réutilisation des données en assurant la fiabilité, la reproductibilité et la transparence des analyses qui ont été réalisées. Pour cela, il est nécessaire de structurer son jeu de données avant de le partager et d'y associer des métadonnées riches et standardisées offrant le plus d'informations possibles. Il est également important de tracer l'utilisation et le traitement des données pour que les personnes souhaitant les réutiliser obtiennent les mêmes résultats par elles-mêmes.
 
-Le stage de master 1 présenté ici a permis d'étudier la dynamique du zooplancton et des particules (neige marine) au niveau d'un mouillage déployé dans le bassin Atlantique équatorial (23° W, 0° N). Afin d'enrichir les connaissances sur les communautés planctoniques mésopélagiques, deux UVP6 (Underwater Vision Profiler) fixes ont été placés à 300 et 830 m de profondeur. Les caméras ont acquis des données toutes les heures, sur plus de 5 ans (du 12 octobre 2019 au 01 février 2025). Les images générées par les UVP6s sont téléchargées dans la plateforme en ligne EcoTaxa (version 2.8.1), qui combine des techniques de machine learning et une validation manuelle permettant la classification taxonomique des organismes zooplanctoniques.
+Le stage de master 1 présenté ici a permis d'étudier la dynamique du zooplancton et des particules (neige marine) au niveau d'un mouillage déployé dans le bassin Atlantique équatorial (23° O, 0° N). Afin d'enrichir les connaissances sur les communautés planctoniques mésopélagiques, deux UVP6 (Underwater Vision Profiler) fixes ont été placés à 300 et 830 m de profondeur. Les caméras ont acquis des données toutes les heures, sur plus de 5 ans (du 12 octobre 2019 au 01 février 2025). Les images générées par les UVP6 sont téléchargées dans la plateforme en ligne EcoTaxa (version 2.8.1), qui combine des techniques de machine learning et une validation manuelle permettant la classification taxonomique des organismes zooplanctoniques.
 
 Ici, les applications de FAIRisation du projet ont été réalisées sur les étapes qui permettent d’obtenir, à partir des données brutes, les tableaux transformés qui servent à réaliser les analyses statistiques sur le zooplancton à 300 m de profondeur.
 
-Nous décrirons dans un premier temps l'état initial des données du stage et leur statut puis nous expliquerons les différentes étapes réalisées pour rendre notre ce projet plus FAIR.
+Nous décrirons dans un premier temps l'état initial des données du stage et leur statut puis nous expliquerons les différentes étapes réalisées pour rendre ce projet plus FAIR.
 
 ## 2. État initial
 
@@ -24,7 +24,7 @@ Les données brutes sont les fichiers :
 
 -   ecotaxa_export_16765_20250513_1216.tsv
 
-Dans les deux fichiers, les données et variables ne sont pas décrites et peu compréhensibles par une personne externe. Les deux premiers fichiers sont cependant des sorties d’EcoTaxa et sont standardisées avec les données d’autres projets réalisés sous EcoTaxa. Les noms des fichiers sont peu clairs, on ne sait pas quel fichier correspond à quelle profondeur.
+Dans les deux fichiers, les données et variables ne sont pas décrites et peu compréhensibles par une personne externe. Les deux premiers fichiers sont cependant des sorties d’EcoTaxa et sont standardisées avec les données d’autres projets réalisés sous EcoTaxa. On peut accéder à ces données sur les serveurs de l'Institut de la Mer de Villefranche, cependant la procédure d'accès n'est pas précisée. Les noms des fichiers sont peu clairs, on ne sait pas quel fichier correspond à quelle profondeur. Il n'y a pas de description concernant l'acquisition des données.
 
 ### 2.2. Métadonnées
 
@@ -44,7 +44,7 @@ Il y a également un fichier de métadonnées embarquées concernant l'UVP6 :
 
 -   Ecopart-mooring_23W0N_UVP6_2019_to_2025_processed_v2.csv
 
-Les noms des colonnes contiennent des unités mais ne sont pas expliquées et peuvent être peu compréhensibles par une personne externe. Il existe des colonnes complètement vides, ce qui est peu clair.
+Les noms des colonnes contiennent des unités mais ne sont pas expliquées et peuvent être peu compréhensibles par une personne externe. Il existe des colonnes complètement vides, ce qui est peu clair. Ce fichier est stocké localement sur l'ordinateur de Julie Dutoict.
 
 ### 2.3. Scripts
 
@@ -94,7 +94,7 @@ La description des variables pour ces jeux de données est disponible sur : <htt
 
 *Étape 3 FAIRisation : description des métadonnées présentes*
 
-Les métadonnées pour les fichiers de sortie d’Ecotaxa sont dans les fichiers des données brutes. La description des variables des métadonnées est disponible sur : <https://zenodo.org/records/17712720>
+Les métadonnées pour les fichiers de sortie d’Ecotaxa sont dans les fichiers des données brutes. Elles sont disponibles par demande auprès de Julie Dutoict. La description des variables des métadonnées est disponible sur : <https://zenodo.org/records/17712720>
 
 Exemple :
 
@@ -118,7 +118,7 @@ Les métadonnées concernant les identifications taxonomiques (classification ph
 
 -   Métadonnées_catégories_identification.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Les catégories de l'ancienne classification ("unacceped" sur Worms, par exemple Thecosomata) sont identifiées avec leur APHIA ID. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas taxonomiques (par exemple détritus et bean-like), ce qui rend la réutilisation de ces catégories moins faciles, même si elles sont définies dans le fichier.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Les catégories de l'ancienne classification ("unaccepted" sur Worms, par exemple Thecosomata) sont identifiées avec leur APHIA ID de l'ancienne classification. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant pérenne. De plus, il est accessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas taxonomiques (par exemple détritus et bean-like), ce qui rend la réutilisation de ces catégories moins faciles, même si elles sont définies dans le fichier. Afin de faciliter la collaboration et la comparaison de résultats entre projets, il serait pertinent de créer un document public avec la description détaillée de chaque catégorie d'identification.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
@@ -126,21 +126,21 @@ Des métadonnées embarquées sont dans le fichier :
 
 -   Données_embarquées_UVP6.csv
 
-Ce fichier, contient des données envoyées par l'UVP, notamment les volumes filtrés par l'UVP, ainsi que les concentrations et biovolumes de différentes classes de taille de particules. Ce fichier figure dans le dossier "Input" car les volumes filtrés sont utilisés dans les analyses.
+Ce fichier contient des données envoyées par l'UVP, notamment les volumes filtrés par l'UVP, ainsi que les concentrations et biovolumes de différentes classes de taille de particules. Ce fichier figure dans le dossier "Input" car les volumes filtrés sont utilisés dans les analyses.
 
 Associé à ce fichier, le fichier
 
 -   Metadonnées_UVP6.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant perenne. De plus, il est acessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau renseigne sur le nom des colonnes et sur les unités du précédent fichier. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant pérenne. De plus, il est accessible sur ce Github, mais manque d'une licence. Il est interopérable, car c'est un csv, et les termes utilisés sont définis. Enfin, il est réutilisable, avec des descriptions utiles pour réutiliser les données.
 
 ### 3.3. Scripts
 
-*Étape 6 FAIRisation : hiérarchisation des scripts, réécriture en R markdown et annotation*
+*Étape 6 FAIRisation : hiérarchisation des scripts, réécriture en R Markdown et annotation*
 
-Les scripts R ont été hiérachisés dans l’ordre de lancement. Pour obtenir le tableau final, tous les calculs sont réalisés sous R, il n’est plus nécessaire de remplir une colonne du tableau intermédiaire sur excel.
+Les scripts R ont été hiérarchisés dans l’ordre de lancement. Pour obtenir le tableau final, tous les calculs sont réalisés sous R, il n’est plus nécessaire de remplir une colonne du tableau intermédiaire sur excel.
 
-Les scripts ont été annotés et écrits en R markdown afin de permettre une documentation claire, visionnable et compréhensible par des utilisateurs non experts.
+Les scripts ont été annotés et écrits en R Markdown afin de permettre une documentation claire, visionnable et compréhensible par des utilisateurs non experts.
 
 Les scripts permettant à partir des données brutes d’obtenir le tableau pour les analyses de zooplancton à 300m sont les suivants :
 
@@ -154,7 +154,7 @@ Les scripts permettant à partir des données brutes d’obtenir le tableau pour
 
 -   Script5_concentrations_zooplancton_300m.Rmd : Obtient les concentrations de chaque taxon de zooplancton par mois à partir des abondances en les divisant par le volume échantillonné, récupéré dans le script4
 
-Le format R markdown les rend intéractifs et clairs. En appuyant sur "knit", il est possible de les convertir en .html pour les partager facilement. Ils sont également disponibles sous le format markdown pour être visible de façon claire sur Github.
+Le format R Markdown les rend intéractifs et clairs. En appuyant sur "knit", il est possible de les convertir en .html pour les partager facilement. Ils sont également disponibles sous le format Markdown pour être visibles de façon claire sur Github.
 
 ### 3.5. Arborescence finale
 
@@ -197,4 +197,4 @@ qui est le fichier final réalisé à partir des scripts FAIRisés ici, qui est 
 
 ### 3.5. Perspectives
 
-*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant perenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant perenne à la station d'échantillonage.*
+*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant pérenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant pérenne à la station d'échantillonnage et aux contributeurs du projet, ainsi que de mentionner les incertitudes liées à l'acquisition des données.*
