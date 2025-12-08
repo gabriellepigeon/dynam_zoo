@@ -1,6 +1,6 @@
 # FAIRisation d'un stage de Master 1 sur la dynamique du zooplancton et de la neige marine en Atlantique équatorial
 
-Stage de 2 mois réalisé en 2025 par Julie Dutoict au Laboratoire d'Océanographie de Villefranche, sous l'encadrement de Lars Stemmann, professeur d'universités à Sorbonne Université
+Stage de 2 mois réalisé en 2025 par Julie Dutoict au Laboratoire d'Océanographie de Villefranche, sous l'encadrement de Lars Stemmann, professeur des universités à Sorbonne Université
 
 Processus de FAIRisation réalisé par Gabrielle Pigeon (gabrielle.pigeon\@etu.sorbonne-universite.fr), Margot Rabeau (margot.rabeau\@etu.sorbonne-universite.fr) et Julie Dutoict (julie.dutoict\@etu.sorbonne-universite.fr)
 
@@ -8,7 +8,7 @@ Processus de FAIRisation réalisé par Gabrielle Pigeon (gabrielle.pigeon\@etu.s
 
 Ce projet vise à appliquer les pratiques FAIR (Findable, Accessible, Interoperable, Reusable) à un jeu de données et scripts issus d'un stage de Master 1. Le but est de promouvoir la réutilisation des données en assurant la fiabilité, la reproductibilité et la transparence des analyses qui ont été réalisées. Pour cela, il est nécessaire de structurer son jeu de données avant de le partager et d'y associer des métadonnées riches et standardisées offrant le plus d'informations possibles. Il est également important de tracer l'utilisation et le traitement des données pour que les personnes souhaitant les réutiliser obtiennent les mêmes résultats par elles-mêmes.
 
-Le stage de master 1 présenté ici a permis d'étudier la dynamique du zooplancton et des particules (neige marine) au niveau d'un mouillage déployé dans le bassin Atlantique équatorial (23° O, 0° N). Afin d'enrichir les connaissances sur les communautés planctoniques mésopélagiques, deux UVP6 (Underwater Vision Profiler) fixes ont été placés à 300 et 830 m de profondeur. Les caméras ont acquis des données toutes les heures, sur plus de 5 ans (du 12 octobre 2019 au 01 février 2025). Les images générées par les UVP6 sont téléchargées dans la plateforme en ligne EcoTaxa (version 2.8.1), qui combine des techniques de machine learning et une validation manuelle permettant la classification taxonomique des organismes zooplanctoniques.
+Le stage de master 1 présenté ici a permis d'étudier la dynamique du zooplancton et des particules (neige marine) au niveau d'un mouillage déployé dans le bassin Atlantique équatorial (23° O, 0° N). Afin d'enrichir les connaissances sur les communautés planctoniques mésopélagiques, deux UVP6 (Underwater Vision Profiler) fixes ont été placés à 300 et 800 m de profondeur. Les caméras ont acquis des données toutes les heures, sur plus de 5 ans (du 12 octobre 2019 au 01 février 2025). Les images générées par les UVP6 sont téléchargées dans la plateforme en ligne EcoTaxa (version 2.8.1), qui combine des techniques de machine learning et une validation manuelle permettant la classification taxonomique des organismes zooplanctoniques.
 
 Ici, les applications de FAIRisation du projet ont été réalisées sur les étapes qui permettent d’obtenir, à partir des données brutes, les tableaux transformés qui servent à réaliser les analyses statistiques sur le zooplancton à 300 m de profondeur.
 
@@ -78,15 +78,15 @@ Les scripts sont peu compréhensibles par une personne externe au projet (peu an
 
 *Étape 1 FAIRisation : description de l’acquisition des jeux de données*
 
-Chaque image et métadonnées associées acquises par les UVP6 ont été importées dans l'application web Ecotaxa sous forme de 2 projets pour les profondeurs de 300 m (<https://ecotaxa.obs-vlfr.fr/prj/16765>) et 830 m (<https://ecotaxa.obs-vlfr.fr/prj/16757>). Ces projets sont disponibles mais nécessitent une authentification sur la plateforme et une autorisation d’accès par Lars Stemmann (lars.stemmann\@imev-mer.fr). Les prédictions taxonomiques automatiques par le logiciel ont fait l'objet d'une validation manuelle par Gleice Souza Santos (données d'octobre 2019 à juillet 2021) et Julie Dutoict (données d'août 2021 à janvier 2025).
+Chaque image et métadonnées associées acquises par les UVP6 ont été importées dans l'application web Ecotaxa sous forme de 2 projets pour les profondeurs de 300 m (<https://ecotaxa.obs-vlfr.fr/prj/16765>) et 800 m (<https://ecotaxa.obs-vlfr.fr/prj/16757>). Ces projets sont disponibles mais nécessitent une authentification sur la plateforme et une autorisation d’accès par Lars Stemmann (lars.stemmann\@imev-mer.fr). Les prédictions taxonomiques automatiques par le logiciel ont fait l'objet d'une validation manuelle par Gleice Souza Santos (données d'octobre 2019 à juillet 2021) et Julie Dutoict (données d'août 2021 à janvier 2025).
 
 *Étape 2 FAIRisation : description du jeu de données*
 
 Les images validées ont ensuite été exportées sous la forme de tableaux avec 144 variables. Chaque ligne contient des informations pour une image. Le nom des tableaux indique la profondeur du mouillage :
 
--   Tableau 1 (UVP6 à 300m) : "ecotaxa_export_300m.tsv"
+-   Tableau 1 (UVP6 à 300 m) : "ecotaxa_export_300m.tsv"
 
--   Tableau 2 (UVP6 à 830m) : "ecotaxa_export_800m.tsv"
+-   Tableau 2 (UVP6 à 800 m) : "ecotaxa_export_800m.tsv"
 
 La description des variables pour ces jeux de données est disponible sur : <https://zenodo.org/records/17712720>. Ce fichier est FAIR sur de nombreux aspects. Il est facile à trouver : il a un DOI permanent (10.5281/zenodo.17712720) et il est hébergé dans une archive reconnue. Il est accessible, publié sous la licence ouverte Creative Commons 4.0 et téléchargeable. Il est interopérable : les métadonnées et la description des données sont formalisées dans un format standard. Cependant ceci pourrait être amélioré avec un format de données ouvert (csv au lieu d'Excel). Enfin, le dépôt est réutilisable, avec une documentation claire (description et unités des variables).
 
@@ -94,7 +94,7 @@ La description des variables pour ces jeux de données est disponible sur : <htt
 
 *Étape 3 FAIRisation : description des métadonnées présentes*
 
-Les métadonnées pour les fichiers de sortie d’Ecotaxa sont dans les fichiers des données brutes. Elles sont disponibles par demande auprès de Julie Dutoict. La description des variables des métadonnées est disponible sur : <https://zenodo.org/records/17712720>
+Les métadonnées pour les fichiers de sortie d’Ecotaxa sont dans les fichiers des données brutes. Elles sont disponibles sur demande auprès de Julie Dutoict. La description des variables des métadonnées est disponible sur : <https://zenodo.org/records/17712720>
 
 Exemple :
 
@@ -118,7 +118,7 @@ Les métadonnées concernant les identifications taxonomiques (classification ph
 
 -   Métadonnées_catégories_identification.csv
 
-réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Les catégories de l'ancienne classification ("unaccepted" sur Worms, par exemple Thecosomata) sont identifiées avec leur APHIA ID de l'ancienne classification. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant pérenne. De plus, il est accessible sur ce Github, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas taxonomiques (par exemple détritus et bean-like), ce qui rend la réutilisation de ces catégories moins faciles, même si elles sont définies dans le fichier. Afin de faciliter la collaboration et la comparaison de résultats entre projets, il serait pertinent de créer un document public avec la description détaillée de chaque catégorie d'identification.
+réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau. Les catégories de l'ancienne classification ("unaccepted" sur Worms, par exemple Thecosomata) sont identifiées avec leur APHIA ID de l'ancienne classification. Ce fichier pourrait être amélioré sur certains points car il n'est pas trouvable, n'ayant pas d'identifiant pérenne. De plus, il est accessible sur ce GitHub, mais manque d'une licence. Il est interopérable et réutilisable, car c'est un csv, et utilise des identifiants standardisés (AphiaID). Il faut cependant noter que certaines catégories ne sont pas taxonomiques (par exemple détritus et bean-like), ce qui rend la réutilisation de ces catégories moins facile, même si elles sont définies dans le fichier. Afin de faciliter la collaboration et la comparaison de résultats entre projets, il serait pertinent de créer un document public avec la description détaillée de chaque catégorie d'identification.
 
 *Étape 5 FAIRisation : métadonnées embarquées*
 
@@ -138,11 +138,11 @@ réalisé par Julie Dutoict, Gabrielle Pigeon et Margot Rabeau renseigne sur le 
 
 *Étape 6 FAIRisation : hiérarchisation des scripts, réécriture en R Markdown et annotation*
 
-Les scripts R ont été hiérarchisés dans l’ordre de lancement. Pour obtenir le tableau final, tous les calculs sont réalisés sous R, il n’est plus nécessaire de remplir une colonne du tableau intermédiaire sur excel.
+Les scripts R ont été hiérarchisés dans l’ordre de lancement. Pour obtenir le tableau final, tous les calculs sont réalisés sous R, il n’est plus nécessaire de remplir une colonne du tableau intermédiaire sur Excel.
 
 Les scripts ont été annotés et écrits en R Markdown afin de permettre une documentation claire, visionnable et compréhensible par des utilisateurs non experts.
 
-Les scripts permettant à partir des données brutes d’obtenir le tableau pour les analyses de zooplancton à 300m sont les suivants :
+Les scripts permettant à partir des données brutes d’obtenir le tableau pour les analyses de zooplancton à 300 m sont les suivants :
 
 -   Script1_liste_taxons_300m.Rmd : Création d’un tableau avec la liste des taxons identifiés sur EcoTaxa à partir de la base de données ecotaxa_export_300m.tsv
 
@@ -150,11 +150,11 @@ Les scripts permettant à partir des données brutes d’obtenir le tableau pour
 
 -   Script3_groupement_abondance_mois_300m.Rmd : Groupe les abondances par mois et reformatte le tableau pour obtenir un tableau avec colonnes = taxon et ligne = date
 
--   Script4_extraction_volume_300m.Rmd : Extrait les volumes échantillonnés par l’UVP à 300m pour calculer des concentrations d'organismes à partir des abondances
+-   Script4_extraction_volume_300m.Rmd : Extrait les volumes échantillonnés par l’UVP à 300 m pour calculer des concentrations d'organismes à partir des abondances
 
--   Script5_concentrations_zooplancton_300m.Rmd : Obtient les concentrations de chaque taxon de zooplancton par mois à partir des abondances en les divisant par le volume échantillonné, récupéré dans le script4
+-   Script5_concentrations_zooplancton_300m.Rmd : Obtient les concentrations de chaque taxon de zooplancton par mois à partir des abondances en les divisant par le volume échantillonné, récupéré dans le script 4
 
-Le format R Markdown les rend intéractifs et clairs. En appuyant sur "knit", il est possible de les convertir en .html pour les partager facilement. Ils sont également disponibles sous le format Markdown pour être visibles de façon claire sur Github.
+Le format R Markdown les rend interactifs et clairs. En appuyant sur "knit", il est possible de les convertir en .html pour les partager facilement. Ils sont également disponibles sous le format Markdown pour être visibles de façon claire sur GitHub.
 
 ### 3.5. Arborescence finale
 
@@ -193,8 +193,8 @@ Avec
 
 -   Table_conc_month_zoo_NOCOP_300m.csv
 
-qui est le fichier final réalisé à partir des scripts FAIRisés ici, qui est utilisé par la suite pour les analyses sur le zooplancton à 300m.
+qui est le fichier final réalisé à partir des scripts FAIRisés ici, qui est utilisé par la suite pour les analyses sur le zooplancton à 300 m.
 
 ### 3.5. Perspectives
 
-*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant pérenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant pérenne à la station d'échantillonnage et aux contributeurs du projet, ainsi que de mentionner les incertitudes liées à l'acquisition des données.*
+*Pour que l'entièreté du projet soit FAIR, il faudrait refaire ces étapes sur les autres scripts (scripts pour les données du zooplancton à 800 m et des particules, scripts d'analyse des données). De nombreuses pistes d'amélioration des fichiers de données et métadonnées sont également possibles (identifiant pérenne, licence et conditions d'accès). Il serait également pertinent de rajouter un identifiant pérenne à la station d'échantillonnage et aux contributeurs du projet, ainsi que de mentionner les incertitudes liées à l'acquisition des données. Enfin, afin de garantir une bonne compréhension de ce projet par un maximum de personnes, il faudrait réécrire l'ensemble des documents en anglais.*
